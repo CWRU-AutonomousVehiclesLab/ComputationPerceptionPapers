@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSC2530: Schedule &amp; Readings</title>
+<style>
+ 
+/* Based on a free cv design published by Richard Carpenter at http://www.hv-designs.co.uk */
+
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 { font-size:100; font-weight:normal }
+q:before, q:after { content:''}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight: bold }
+em { font-style: italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('myriadpro.eot');
+	src: local('Myriad Pro'), local('fonts'), url('../fonts/myriadpro.ttf') format('truetype'), url('../fonts/myriadpro.svg#MyriadPro-Regular') format('svg');
+}
+
+body {
+	margin-top: 35px;
+}
+
+#container {
+	margin: auto;
+	width: 75;
+}
+
+#frame-top, #frame-btm  {
+	float: left;
+	height: 25px;
+	width: 100;
+}
+
+#frame-middle {
+	float: left;
+	width: 100;
+}
+
+#page {
+	font-family: MyriadProRegular, Verdana, Arial;
+	float: left;
+	width: 100;
+	margin-left: 25px;
+	background-color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+h2 {
+	height: 25px;
+	font-size: 20px;
+/*	width: 1000px;*/
+	margin-bottom: 10px;
+/*	float: left; */
+	margin-left: 30px;
+}
+
+.divider {
+	clear: both;
+	border-bottom: 1px solid #CCC;
+	float: left;
+	height: 2px;
+	width: 100;
+	margin-top: 27px;
+	margin-bottom: 27px;
+}
+
+.credits {
+	float: left;
+	margin-left: 30px;
+}
+
+h3 {
+	margin-left: 30px;
+	font-size: 14px;
+	color: #414141;
+	letter-spacing: -1px;
+	margin-bottom: 15px;
+}
+
+ul.details {
+/*	float: left;*/
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+.details li {
+	padding-left: 35px;
+	margin-bottom: 20px;
+}
+
+.details li p {
+	margin-right: 30px;
+	text-align: justify;
+	color: #646464;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+h1 {
+	color: #006ea7;
+	font-size: 25px;
+	margin-bottom: 5px;
+	letter-spacing: -1px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div id="container">
+
+
+<div id="frame-middle">
+
+<div id="page">
+
+<h1>Part I: Steady-State Computational Imaging (Long Timescales Relative to Speed of Light)</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+
+<h2>Lecture 01: Course Roadmap, Modern Camera Pipelines</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>M. S. Brown, “Understanding color &amp; the in-camera image processing pipeline for computer vision,” Proc. IEEE ICCV, 2019, pp. 1–246.
+<a href="Papers/L01/2019-ICCV -Brown.pdf">(pdf)</a>
+</p>
+</li>
+</ul>
+
+<h2>Lecture 02: Conventional Cameras &amp their Limits</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R01]	A. Abdelhamed, M. A. Brubaker, and M. S. Brown, “Noise Flow: Noise Modeling With Conditional Normalizing Flows,” Proc. IEEE ICCV, 2019, pp. 3165–3173.
+<a href="Papers/L02/Proc._IEEE_ICCV_2019_Abdelhamed.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R02]	A. Lohmann, “Scaling laws for lens systems,” <i>Appl Optics</i>, 1989.
+<a href="Papers/L02/Appl_Optics_1989_LOHMANN.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R03]	O. S. Cossairt, D. Miau, and S. K. Nayar, “Scaling law for computational imaging using spherical optics,” <i>J Opt Soc Am A</i>, vol. 28, no. 12, pp. 2540–2553, 2011. <font color="red">Read Sections 1-5 only.</font>
+<a href="Papers/L02/IEEE-TIP_2012_Cossairt.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>M. S. Levoy, “Lectures on Digital Photography: Noise and ISO,” 2016, pp. 1–50.
+<a href="Papers/2016_Levoy-2.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>M. S. Levoy, “Lectures on Digital Photography: Optics I,” 2016, pp. 1–81.
+<a href="Papers/2016_Levoy.pdf">(pdf)</a>
+</p>
+</li>
+<li>
+<p>M. S. Levoy, “Lectures on Digital Photography: Optics II,” 2016, pp. 1–48.
+<a href="Papers/2016_Levoy-1.pdf">(pdf)</a>
+</p>
+</li>
+</ul>
+
+<h2>Lecture 03: Multi-Perspective &amp Light-Field Imaging</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<li>
+<p>[R04] R. Ng, M. Levoy, M. Brédif, G. Duval, M. Horowitz, and P. Hanrahan, “Light field photography with a hand-held plenoptic camera,” CSTR 2005-02, Stanford, 2005.
+<a href="Papers/L03/2005_Ng.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R05] K. Venkataraman, D. Lelescu, J. Duparré, A. McMahon, G. Molina, P. Chatterjee, R. Mullis, and S. Nayar, “PiCam: an ultra-thin high performance monolithic camera array,” Proc. SIGGRAPH Asia 2013.
+<a href="Papers/L03/ACM_TOG_(SIGGRAPH_Asia)_2013_Venkataraman.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R06] J.-X. Chai, X. Tong, S.-C. Chan, and H.-Y. Shum, “Plenoptic sampling,” Proc. ACM SIGGRAPH, 2000, pp. 307–318.
+<a href="Papers/L03/2000-ACM SIGGRAPH-Chai.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>E. H. Adelson and J. Wang, “Single lens stereo with a plenoptic camera,” <i>IEEE T-PAMI</i>, 1992.
+<a href="Papers/L03/IEEE_T-PAMI_1992_Adelson.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>M. S. Levoy and P. Hanrahan, “Light field rendering,” Proc. ACM SIGGRAPH, 1996.
+<a href="Papers/L03/1996-ACM SIGGRAPH-Levoy.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>B. Wilburn, N. Joshi, V. Vaish, E.-V. Talvala, E. Antunez, A. Barth, A. Adams, M. Horowitz, and M. S. Levoy, “High performance imaging using large camera arrays,” Proc. ACM SIGGRAPH, 2005.
+<a href="Papers/L03/2005-ACM SIGGRAPH-Wilburn.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>S. Peleg, B. Rousso, A. Rav-Acha, and A. Zomet, “Mosaicing on adaptive manifolds,” <i>IEEE T-PAMI</i>, vol. 22, no. 10, pp. 1144–1154, 2000.
+<a href="Papers/L03/2000-IEEE T-PAMI-Peleg.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>R. C. Bolles, H. H. Baker, and D. H. Marimont, “Epipolar-plane image analysis: An approach to determining structure from motion,” <i>Int. J. Computer Vision</i>, vol. 1, no. 1, pp. 7–55, 1987.
+<a href="Papers/L03/Int._J._Computer_Vision_1987_Bolles.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>T. E. Bishop and P. Favaro, “The Light Field Camera: Extended Depth of Field, Aliasing, and Superresolution,” <i>IEEE T-PAMI</i>, 2012.
+<a href="Papers/L03/2012-IEEE T-PAMI-Bishop.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>N. Wadhwa, R. Garg, D. E. Jacobs, B. E. Feldman, N. Kanazawa, R. Carroll, Y. Movshovitz-Attias, J. T. Barron, Y. Pritch, and M. S. Levoy, “Synthetic depth-of-field with a single-camera mobile phone,” <i>ACM TOG</i>, vol. 37, no. 4, pp. 64–13, Jul. 2018.
+<a href="Papers/L03/2018-ACM TOG-Wadhwa.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>A. Punnappurath, A. Abuolaim, M. Afifi, and M. S. Brown, “Modeling Defocus-Disparity in Dual-Pixel Sensors,” IEEE Int. Conf. on Computational Photography, 2020, pp. 1–12.
+<a href="Papers/L03/2020-IEEE ICCP-Punnappurath.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h2>Lecture 04: Optical Coding I: Masks &amp; Diffusers for High-Speed Imaging &amp; Lenseless Imaging</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R07] D. Liu, J. Gu, Y. Hitomi, M. Gupta, and S. K. Nayar, “Efficient space-time sampling with pixel-wise coded exposure for high-speed imaging,” <i>IEEE T-PAMI</i>, vol. 36, no. 2, pp. 248–260, 2014.
+<a href="Papers/L04/2014-IEEE T-PAMI-Liu.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R08]	M. S. Asif, A. Ayremlou, A. Sankaranarayanan, A. Veeraraghavan, and R. G. Baraniuk, “FlatCam: Thin, Lensless Cameras Using Coded Aperture and Computation,” <i>IEEE TCI</i>, vol. 3, no. 3, pp. 384–397, Jul. 2017.
+<a href="Papers/L04/2017-IEEE TCI-Asif.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R09] N. Antipa, G. Kuo, R. Heckel, B. Mildenhall, E. Bostan, R. Ng, and L. Waller, “DiffuserCam: lensless single-exposure 3D imaging,” <i>Optica</i>, vol. 5, no. 1, 2018.
+<a href="Papers/L04/2018-Optica-Antipa.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>M. Wei, N. Sarhangnejad, Z. Xia, N. Gusev, N. Katic, R. Genov, and K. N. Kutulakos, “Coded Two-Bucket Cameras for Computer Vision,” Proc. ECCV, 2018, pp. 54–71.
+<a href="Papers/L04/2018--Wei.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>O. Cossairt, M. Gupta, and S. K. Nayar, “When Does Computational Imaging Improve Performance?,” <i>IEEE-TIP</i>, no. 99, p. 1, 2012.
+<a href="Papers/L04/2012-IEEE-TIP-Cossairt.pdf">(pdf)</a></p>
+<li>
+<p>N. Antipa, P. Oare, E. Bostan, R. Ng, and L. Waller, “Video from stills: Lensless imaging with rolling shutter,” presented at the Proc. IEEE Int. Conf. on Computational Photography, 2019.
+<a href="Papers/L04/2019-Proc. IEEE ICCP-Antipa.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>S. S. Khan, V. Sundar, V. Boominathan, A. Veeraraghavan, and K. Mitra, “FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements,” <i>IEEE T-PAMI</i>, pp. 1–1, 2020.
+<a href="Papers/L04/2020-IEEE T-PAMI-Khan.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>V. Boominathan, J. K. Adams, J. T. Robinson, and A. Veeraraghavan, “PhlatCam: Designed Phase-Mask Based Thin Lensless Camera,” <i>IEEE T-PAMI</i>, vol. 42, no. 7, pp. 1618–1629, 2020.
+<a href="Papers/L04/2020-IEEE T-PAMI-Boominathan.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h2>Lecture 05: Optical Coding II: Computational Lenses for High-Res Imaging &amp;  Optical Multiplexing</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R10] O. S. Cossairt, D. Miau, and S. K. Nayar, “Scaling law for computational imaging using spherical optics,” <i>J Opt Soc Am A</i>, vol. 28, no. 12, pp. 2540–2553, 2011. <font color="red">Read rest of paper.</font>
+<a href="Papers/L05/IEEE-TIP_2012_Cossairt.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R11] Y. Peng, Q. Fu, F. Heide, and W. Heidrich, “The Diffractive Achromat Full Spectrum Computational Imaging with Diffractive Optics,” <i>ACM TOG</i>, vol. 35, no. 4, pp. –11, Jul. 2016.
+<a href="Papers/L05/2016-ACM TOG-Peng.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R12] Q. Guo, Z. dShi, Y.-W. Huang, E. Alexander, C.-W. Qiu, F. Capasso, and T. Zickler, “Compact single-shot metalens depth sensors inspired by eyes of jumping spiders,” <i>Proceedings of the National Academy of Sciences</i>, vol. 116, no. 46, pp. 22959–22965, Nov. 2019.
+<a href="Papers/L05/2019-Proceedings of the National Academy of Sciences-Guo.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>R. J. Lin, V.-C. Su, S. Wang, M. K. Chen, T. L. Chung, Y. H. Chen, H. Y. Kuo, J.-W. Chen, J. Chen, Y.-T. Huang, J.-H. Wang, C. H. Chu, P. C. Wu, T. Li, Z. Wang, S. Zhu, and D. P. Tsai, “Achromatic metalens array for full-colour light-field imaging,” <i>Nat. Nanotechnol.</i>, vol. 14, no. 3, pp. 227–231, Mar. 2019.
+<a href="Papers/L05/2019-Nat. Nanotechnol.-Lin.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h2>Lecture 06: Exploiting Coherence for High-Performance Imaging</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R13] J. Holloway, Y. Wu, M. K. Sharma, O. Cossairt, and A. Veeraraghavan, “SAVI: Synthetic apertures for long-range, subdiffraction-limited visible imaging using Fourier ptychography,” <i>Science Advances</i>, vol. 3, no. 4, Apr. 2017.
+<a href="Papers/L06/2017--Holloway.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R14] Y. Wu, M. K. Sharma, and A. Veeraraghavan, “WISH: wavefront imaging sensor with high resolution,” <i>Light: Science &amp; Applications 2019 8:1</i>, vol. 8, no. 1, p. 44, May 2019.
+<a href="Papers/L06/2019-Light Science & Applications 2019 81-Wu.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R15] K. L. Bouman, “Extreme imaging via physical model inversion : seeing around corners and imaging black holes,” Massachusetts Institute of Technology, 2017. 
+<font color="red">Chapters 2,3 only.</font>
+<a href="Papers/L06/2017--Bouman.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h1>Part II: Computational Single-Photon Imaging &amp; Event-Based Imaging </h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+
+<h2>Lecture 07: Imaging with SPADs and DVS cameras</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R17] A. Ingle, A. Velten, and M. Gupta, “High Flux Passive Imaging with Single-Photon Sensors,” Proc. IEEE CVPR, 2019.
+<a href="Papers/L07/2019--Ingle.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R18] S. Ma, S. Gupta, A. C. Ulku, C. Bruschini, E. Charbon, and M. Gupta, “Quanta burst photography,” <i>ACM TOG</i>, vol. 39, no. 4, p. 1, Jul. 2020.
+<a href="Papers/L07/2020-ACM TOG-Ma.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R19] H. Kim, S. Leutenegger, and A. J. Davison, “Real-Time 3D Reconstruction and 6-DoF Tracking with an Event Camera,” presented at the Proc. ECCV, Cham, 2016, vol. 9910, no. 10, pp. 349–364.
+<a href="Papers/L07/2016--Kim.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>N. Matsuda, O. Cossairt, and M. Gupta, “MC3D: Motion Contrast 3D Scanning,” in Proc. IEEE ICCP, 2015, pp. 1–10.
+<a href="Papers/L07/2015-Proc. IEEE ICCP-Matsuda.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h1>Part III: Computational Time-Resolved Imaging (Short Timescales Relative to Speed of Light) </h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h2>Lecture 08: Impulse &amp; Continuous-Wave Time-of-Flight 3D Sensing</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R20] A. Kirmani, D. Venkatraman, D. Shin, A. Colaco, F. N. C. Wong, J. H. Shapiro, and V. K. Goyal, “First-Photon Imaging,” <i>Science</i>, vol. 343, no. 6166, pp. 58–61, Jan. 2014..
+<a href="Papers/L08/2014-Science-Kirmani.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R21] A. Gupta, A. Ingle, and M. Gupta, “Asynchronous Single-Photon 3D Imaging,” Proc. IEEE ICCV, 2019, pp. 7909–7918.
+<a href="Papers/L08/2019-Proc. IEEE ICCV-Gupta.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R22] M. Gupta, A. Velten, S. K. Nayar, and E. Breitbach, “What are optimal coding functions for time-of-flight imaging?,” <i>ACM TOG</i>, vol. 37, no. 2, 2018.
+<a href="Papers/L08/2018-ACM TOG-Gupta.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>R. Lange and P. Seitz, “Solid-state time-of-flight range camera,” <i>IEEE J. Quantum Electron.</i>, vol. 37, no. 3, pp. 390–397, 2001.
+<a href="Papers/L08/2001-IEEE J. Quantum Electron.-Lange.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>A. Kadambi and R. Raskar, “Rethinking Machine Vision Time of Flight With GHz Heterodyning,” <i>IEEE Access</i>, vol. 5, pp. 26211–26223, 2017.
+<a href="Papers/L08/2017-IEEE Access-Kadambi.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>A. K. Pediredla, A. C. Sankaranarayanan, M. Buttafava, A. Tosi, and A. Veeraraghavan, “Signal processing based pile-up compensation for gated single-photon avalanche diodes,” <i>arXiv.org</i>. 2018.
+<a href="Papers/L08/2018-arXiv.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h1>Part IV: Computational Light Transport </h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h2>Lecture 09: Steady-State Computational Light Transport</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R22] M. O'Toole, S. Achar, S. G. Narasimhan, and K. N. Kutulakos, “Homogeneous codes for energy-efficient illumination and imaging,” <i>ACM TOG (SIGGRAPH)</i>, vol. 34, no. 4, 2015.
+<a href="Papers/L09/2015-ACM TOG (SIGGRAPH)-O'Toole.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R23] S. Popoff, G. Lerosey, M. Fink, A. C. Boccara, and S. Gigan, “Image transmission through an opaque material,” <i>Nat Commun</i>, vol. 1, p. 81, 2010.
+<a href="Papers/L09/2010-Nat Commun-Popoff.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R24] M. Sheinin, Y. Y. Schechner, and K. N. Kutulakos, “Computational Imaging on the Electric Grid,” IEEE CVPR, 2017.
+<a href="Papers/L09/2017-Proc. IEEE CVPR-Sheinin.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>M. O'Toole, R. Raskar, and K. N. Kutulakos, “Primal-dual Coding to Probe Light Transport,” Proc. ACM SIGGRAPH, 2012.
+<a href="Papers/L09/2012-ACM SIGGRAPH-O'Toole.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>S. Achar, J. R. Bartels, W. L. '. Whittaker, K. N. Kutulakos, and S. G. Narasimhan, “Epipolar time-of-flight imaging,” <i>ACM TOG (SIGGRAPH)</i>, vol. 36, no. 4, 2017.
+<a href="Papers/L09/2017-ACM TOG (SIGGRAPH)-Achar.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>M. Sharma, C. A. Metzler, S. Nagesh, O. Cossairt, R. G. Baraniuk, and A. Veeraraghavan, “Inverse Scattering via Transmission Matrices: Broadband Illumination and Fast Phase Retrieval Algorithms,” <i>IEEE TCI</i>, vol. PP, no. 99, pp. 1–1, May 2019.
+<a href="Papers/L09/2019-IEEE TCI-Sharma.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>H. Kubo, S. Jayasuriya, T. Iwaguchi, T. Funatomi, Y. Mukaigawa, and S. G. Narasimhan, “Programmable Non-Epipolar Indirect Light Transport: Capture and Analysis,” <i>IEEE T-VCG</i>, vol. PP, no. 99, pp. 1–1, Oct. 2019.
+<a href="Papers/L09/2019-IEEE T-VCG-Kubo.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h2>Lecture 10: Time-Resolved Computational Light Transport</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R25] A. Velten, Di Wu, A. Jarabo, B. Masia, C. Barsi, C. Joshi, E. Lawson, M. Bawendi, D. Gutierrez, and R. Raskar, “Femto-photography: capturing and visualizing the propagation of light,” <i>ACM TOG</i>, vol. 32, no. 4, 2013.
+<a href="Papers/L10/2013-ACM TOG-Velten.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R26] A. Kotwal, A. Levin, and I. Gkioulekas, “Interferometric transmission probing with coded mutual intensity,” <i>ACM TOG</i>, vol. 39, no. 4, Jul. 2020.
+<a href="Papers/L10/2020-ACM TOG-Kotwal.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R27] D. B. Lindell and G. Wetzstein, “Three-dimensional imaging through scattering media based on confocal diffuse tomography,” <i>Nat Commun</i>, vol. 11, no. 1, pp. 1–8, Sep. 2020.
+<a href="Papers/L10/2020-Nat Commun-Lindell.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h2>Lecture 11: Non-Line-of-Sight Imaging</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R28] S. Xin, S. Nousias, K. N. Kutulakos, A. C. Sankaranarayanan, S. G. Narasimhan, and I. Gkioulekas, “A Theory of Fermat Paths for Non-Line-of-Sight Shape Reconstruction,” presented at the Proc. IEEE CVPR, 2019, pp. 1–10.
+<a href="Papers/L11/2019--Xin.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R29] D. B. Lindell, G. Wetzstein, and M. O'Toole, “Wave-based non-line-of-sight imaging using fast f-k migration,” <i>ACM TOG (SIGGRAPH)</i>, vol. 38, no. 4, pp. 116–13, Jul. 2019.
+<a href="Papers/L11/2019-ACM TOG (SIGGRAPH)-Lindell.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R30] X. Liu, I. Guillén, M. La Manna, J. H. Nam, S. A. Reza, T. H. Le, A. Jarabo, D. Gutierrez, and A. Velten, “Non-line-of-sight imaging using phasor-field virtual wave     optics,” <i>Nature 1967 216:5111</i>, vol. 572, no. 7771, pp. 620–623, Aug. 2019.
+<a href="Papers/L11/2019-Nature 1967 2165111-Liu.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>A. Velten, T. Willwacher, O. Gupta, A. Veeraraghavan, M. G. Bawendi, and R. Raskar, “Recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging,” <i>Nat Commun</i>, vol. 3, pp. 745–745, Mar. 2012.
+<a href="Papers/L11/2012-Nat Commun-Velten.pdf">(pdf)</a>
+</p>
+</li>
+<li>
+<p>M. O'Toole, D. B. Lindell, and G. Wetzstein, “Confocal non-line-of-sight imaging based on the light-cone transform,” <i>Nature</i>, vol. 555, no. 7696, pp. 338–341, Mar. 2018.
+<a href="Papers/L11/2018-Nature-O'Toole.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>K. L. Bouman, “Extreme imaging via physical model inversion : seeing around corners and imaging black holes,” Massachusetts Institute of Technology, 2017. 
+<font color="red">Chapter 6.</font>
+<a href="Papers/L11/2017--Bouman.pdf">(pdf)</a></p>
+</li>
+
+</ul>
+
+
+<h1>Part V: Computational Imaging Meets Deep Learning</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h2>Lecture 12: Computational Imaging Meets Deep Learning</h1>
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+<h3>Readings</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>[R31] Y. Peng, Q. Sun, X. Dun, G. Wetzstein, W. Heidrich, and F. Heide, “Learned large field-of-view imaging with thin-plate optics,” <i>ACM TOG (SIGGRAPH Asia)</i>, vol. 38, no. 6, pp. 219–14, Nov. 2019.
+<a href="Papers/L12/2019-ACM TOG (SIGGRAPH Asia)-Peng.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R32] A. Muthumbi, A. Chaware, A. Erdmann, B. Kappes, B. Judkewitz, K. Kim, K. C. Zhou, P. C. Konda, R. Chen, and R. Horstmeyer, “Learned sensing: jointly optimized microscope hardware for accurate image classification,” <i>Biomed. Opt. Express, BOE</i>, vol. 10, no. 12, pp. 6351–6369, Dec. 2019.
+<a href="Papers/L12/2019-Biomed. Opt. Express BOE-Muthumbi.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>[R33] W. Chen, P. Mirdehghan, S. Fidler, and K. N. Kutulakos, “Auto-Tuning Structured Light by Optical Stochastic Gradient Descent,” Proc. IEEE CVPR, pp. 5970–5980, 2020.
+<a href="Papers/L12/2020--Chen.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<h3>Supplementary readings (optional)</h2>
+
+<ul class="details">
+<!-- Example:
+<li><p>REF</p></li>
+-->
+<li>
+<p>A. Chakrabarti, “Learning Sensor Multiplexing Design through Back-propagation,” presented at the Proc. Neural Information Processing Systems, 2016, pp. 3081–3089.
+<a href="Papers/L12/2016-Proc. NIPS-Chakrabarti.pdf">(pdf)</a></p>
+</p>
+</li>
+<li>
+<p>[3]	E. Tseng, F. Yu, Y. Yang, F. Mannan, K. Arnaud, D. Nowrouzezahrai, J.-F. Lalonde, F. Heide, “Hyperparameter optimization in black-box image processing using differentiable proxies,” <i>ACM TOG</i>, vol. 38, no. 4, pp. 1–14, Jul. 2019.
+<a href="Papers/L12/2019-ACM TOG-TsengEthan.pdf">(pdf)</a>
+</p>
+</li>
+<li>
+<p>G. Wetzstein, A. Ozcan, S. Gigan, S. Fan, D. Englund, M. Soljačić, C. Denz, D. A. B. Miller, and D. Psaltis, “Inference in artificial intelligence with deep optics and photonics,” <i>Nature 1967 216:5111</i>, vol. 588, no. 7836, pp. 39–47, Dec. 2020.
+<a href="Papers/L12/2020-Nature 1967 2165111-Wetzstein.pdf">(pdf)</a></p>
+</li>
+<li>
+<p>A. Ozcan, G. Barbastathis, and G. Situ, “On the use of deep learning for computational imaging,” <i>Optica</i>, vol. 6, no. 8, pp. 921–943, Aug. 2019.
+<a href="Papers/L12/2019-Optica-Ozcan.pdf">(pdf)</a></p>
+</li>
+</ul>
+
+
+<li>
+<p>&nbsp;</p>
+</li>
+
+
+
+<div class="divider"></div>
+
+
+
+</div><!--PAGE ENDS-->
+
+</div><!--FRAME MIDDLE ENDS-->
+
+<div id="frame-btm">
+</div><!--FRAME BOTTOM ENDS-->
+
+</div><!--CONTAINER ENDS-->
+
+</body>
+</html>
